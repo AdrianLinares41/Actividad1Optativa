@@ -30,11 +30,6 @@ JavaScript (JS) es un lenguaje de programación interpretado, ligero y multiplat
 ## Potencia
 - Permite crear desde páginas web dinámicas hasta aplicaciones complejas, videojuegos, servidores, inteligencia artificial y más.
 - Es asíncrono, flexible y tiene una enorme cantidad de librerías y frameworks (React, Angular, Vue, etc.).
-
-## Popularidad y Rankings
-- JavaScript es el lenguaje más popular según el ranking de **Stack Overflow Developer Survey**.
-- [Stack Overflow Developer Survey 2023](https://survey.stackoverflow.co/2023/#technology-most-popular-technologies)
-- [TIOBE Index](https://www.tiobe.com/tiobe-index/)
 - Es esencial para el desarrollo web y uno de los lenguajes más demandados en el mercado laboral.
 
 ---
