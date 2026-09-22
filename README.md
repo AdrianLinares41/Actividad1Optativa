@@ -5,7 +5,7 @@ El objetivo de esta práctica es crear un formulario básico en HTML y JavaScrip
 ## Por qué REACT
 
 - REACT es una biblioteca de JavaScript para construir interfaces de usuario.
-- Es mantenida por Facebook y una comunidad de desarrolladores.
+- Es mantenida por Meta y una comunidad de desarrolladores.
 - Permite construir componentes reutilizables.
 - Es ampliamente utilizada en la industria, lo que la hace relevante para desarrolladores web.
 - Aprender REACT abre oportunidades laborales y mejora las habilidades en desarrollo frontend.
