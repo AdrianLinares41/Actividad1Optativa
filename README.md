@@ -78,13 +78,67 @@ JavaScript (JS) es un lenguaje de programación interpretado, ligero y multiplat
 ## Parte 4: Experimenta
 
 - Cambia el valor de la variable `nombre` por el tuyo y recarga la página.
+   <!DOCTYPE html>
+   <html lang="es">
+   <head>
+     <meta charset="UTF-8">
+     <title>Hola JS</title>
+   </head>
+   <body>
+     <script>
+       console.log("¡Hola, mundo!");
+       let nombre = "Adrian";
+       console.log("Bienvenida, " + nombre);
+     </script>
+   </body>
+   </html>
 - Añade una línea que sume dos números y muestre el resultado con `console.log`.
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Hola JS</title>
+</head>
+<body>
+  <script>
+    console.log("¡Hola, mundo!");
+        let nombre = "Adrian";
+        console.log("Bienvenida, " + nombre);
+        console.log(5 + 3);
+  </script>
+</body>
+</html> 
 - Añade otra variable con tu apellido y muestra un saludo completo.
+
+let apellido = "Linares";
+console.log("¡Hola, " + nombre + " " + apellido + "!");
+
 - Modifica el saludo para que incluya el apellido en mayúsculas. Busca en la consola cómo convertir una cadena a mayúsculas. Para ello usa un literal de cadena (con tu nombre) seguido del operador punto (`.`) 
+
+console.log("¡Hola, " + nombre + " " + apellido.toUpperCase() + "!");
+
 - Modifica el archivo para que el saludo se muestre en la página web en lugar de la consola. Usa `document.body.innerHTML` para esto:
    ```js
    document.body.innerHTML = "<h1>¡Hola, " + nombre + "!</h1>";
    ```
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Hola JS</title>
+</head>
+<body>
+  <script>
+     console.log("¡Hola, mundo!");
+        let nombre = "Adrian";
+        console.log("Bienvenida, " + nombre);
+        console.log(5 + 3);
+        let apellido = "Linares";
+        document.body.innerHTML = "<h1>¡Hola, " + nombre + " " + apellido.toUpperCase() + "!</h1>";
+  </script>
+</body>
+</html> 
+  
 - Publica tu proyecto en el repositorio de GitHub y usa GitHub Pages para alojarlo. Sigue [esta guía](https://docs.github.com/es/pages/getting-started-with-github-pages/creating-a-github-pages-site) para hacerlo.
 
 
