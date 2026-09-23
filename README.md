@@ -182,17 +182,92 @@ console.log("¡Hola, " + nombre + " " + apellido.toUpperCase() + "!");
 ## Parte 6: Preguntas de reflexión
 
 1. ¿Qué hace `console.log`?
+Es una función de JavaScript que sirve para imprimir mensajes o valores en la consola de desarrollador del navegador. Se utiliza principalmente para depurar código (debug), verificar valores de variables y rastrear el flujo de ejecución durante el desarrollo.
 2. ¿Qué ocurre si cambias el valor de la variable desde la consola? ¿Se puede?
+Sí, se puede.
+Si abres la consola de las herramientas de desarrollo e interactúas con ella:
+
+* En el segundo ejemplo, la variable nombre fue declarada con let nombre = "Ana"; en el ámbito global del script.
+
+* Si en la consola escribes nombre = "Adrian";, la variable cambiará su valor en memoria a "Adrian".
+
+* Si después ejecutas console.log(nombre);, la consola devolverá "Carlos".
+
 3. ¿Para qué sirve la consola del navegador en este contexto?
+
+Sirve como entorno de inspección y prueba en tiempo real. Permite:
+
+* Ver las salidas de console.log("¡Hola, mundo!").
+
+* Inspeccionar posibles errores de sintaxis o ejecución.
+
+* Interactuar dinámicamente con las variables y funciones creadas en el código.
+
 4. Para qué sirve el archivo HTML en este contexto?
+
+El archivo HTML provee la estructura y el contenido estático de la página web. Define los elementos de la interfaz de usuario (el título <h1>, el formulario <form>, el cuadro de texto <input>, el botón <button> y el párrafo <p id="salida">) sobre los cuales JavaScript va a interactuar y modificar visualmente.
+
 5. ¿Por qué es una buena práctica separar el código JavaScript del HTML?
+
+* Mantenibilidad y Limpieza: El código HTML se enfoca exclusivamente en la estructura (marcado) y el JavaScript en el comportamiento/lógica.
+
+* Reutilización: Permite vincular el mismo archivo .js a diferentes páginas HTML.
+
+* Caché del Navegador: Los archivos .js externos se guardan en la memoria caché del navegador, lo que acelera la carga de la página en subsecuentes visitas.
+
+* Trabajo en equipo: Facilita que un diseñador/desarrollador trabaje en la maquetación HTML mientras otro trabaja en la lógica de scripts.
+
 6. Por qué se llama Vanilla JavaScript?
+
+Se le denomina Vanilla JS al uso de JavaScript nativo o puro, sin la ayuda de librerías externas (como jQuery) o frameworks (como React, Angular o Vue). El término "Vanilla" hace referencia a lo básico o "sabor tradicional" del lenguaje.
+
 7. Cuándo se usa JavaScript puro y cuándo se usan frameworks o librerías como REACT?
+
+JavaScript Puro: Se utiliza para proyectos pequeños o medianos, scripts sencillos (como el formulario del ejemplo), sitios estáticos o cuando se busca un rendimiento máximo sin la carga de peso extra que añaden las dependencias externas.
+
+Frameworks/Librerías (React, Vue, etc.): Se utilizan para aplicaciones web complejas (SPAs - Single Page Applications), donde el estado de la interfaz cambia constantemente, hay múltiples componentes reutilizables y se requiere una arquitectura más escalable para equipos de desarrollo grandes.
+
 8. Cómo se define una función en JS
+
+function(nombre) {
+  // código
+}
+
 9. Sobre el código demuestra la diferencia entre let y const
+
+* let (Variable reasignable): En el segundo ejemplo se declara let nombre = "Ana";. Al usar let, se le permite a la variable cambiar su valor más adelante (ej. nombre = "Pedro";).
+
+* const (Constante de solo lectura): En formulario.js se declara const nombre = document.getElementById('nombreInput').value;. Al usar const, ese identificador no puede ser reasignado a otro valor en ese mismo ámbito; si intentas hacer nombre = "Otro", JavaScript arrojará un error.
+
 10. Indica en el código:
    1. Si puede evitarse el uso de let. Qué hace
+
+  Sí, puede evitarse.
+
+  En el segundo ejemplo:
+
+  JavaScript
+  let nombre = "Ana";
+
+  Dado que el valor "Ana" nunca se vuelve a reasignar en el script, es mejor práctica declarar esa variable usando const:
+
+  const nombre = "Ana";
+
+  * Instancia una variable en memoria con el texto "Ana", la cual posteriormente es concatenada dentro del parámetro que recibe console.log para mostrar "Bienvenida, Ana".
+
    2. Cuántos eventos hay en el código, cuáles son y para qué sirven
+
+   Hay 2 eventos en el archivo formulario.js:
+
+  * DOMContentLoaded
+
+  ¿Para qué sirve?: Garantiza que la función se ejecute únicamente cuando todo el documento HTML haya sido completamente cargado y parseado por el navegador, evitando intentar acceder al DOM antes de que los elementos existan.
+
+  * submit
+
+  ¿Para qué sirve?: Captura la acción del usuario al enviar el formulario. Dentro de su manejador se llama a event.preventDefault() para evitar que la página se recargue por defecto.
+
+
 
 
 
